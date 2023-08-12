@@ -1,0 +1,58 @@
+.container-codeExample {
+  width: 100%;
+  min-height: 100vh;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.left,
+.right {
+  flex-basis: 50%;
+}
+
+.left {
+  overflow-y: scroll;
+  label {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    background-color: #000;
+    border-bottom: 1px solid #242424;
+
+    span {
+      padding-left: 0.5rem;
+      display: flex;
+      align-items: center;
+    }
+  }
+  textarea {
+    resize: vertical;
+    width: 100%;
+    height: calc(86% / 3);
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: 0;
+    outline: 0;
+    font-size: 1rem;
+  }
+}
+
+.right {
+  iframe {
+    width: 100%;
+    height: 100%;
+    outline: 0;
+    border: 0;
+  }
+}
+
+img {
+  height: 1.1rem;
+  padding-right: 0.5rem;
+}
+
+.hide {
+  display: none;
+}
